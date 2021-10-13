@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --spacecadet: #25283d;
+    --plum: #8f3985;
+    --blizzard: #98dfea;
+    --tiffany: #07beb8;
+    --champagne: #efd9ce;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    resize: none;
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+    background: rgb(94, 98, 126);
+    background: linear-gradient(180deg, rgba(94, 98, 126, 1) 0%, rgba(51, 54, 79, 1) 50%, rgba(37, 40, 61, 1) 100%);
+    color: white;
+    border-radius: 0;
+    border-bottom: 10px solid var(--plum);
+}
+
+hr.break {
+    border-top: 1px solid var(--blizzard);
+}
+
+.today {
+    font-size: 15px;
+    line-height: 0;
+}
+
+#currentDay {
+    color: var(--tiffany);
+    font-size: 25px;
+}
+
+.description {
+    white-space: pre-wrap;
+}
+
+.time-block {
+    text-align: center;
+    border-radius: 15px;
+}
+
+.row {
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+}
+
+.hour {
+    background-color: var(--spacecadet);
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.past {
+    background-color: var(--champagne);
+    color: white;
+    opacity: 50%;
+}
+
+.present {
+    background-color: var(--plum);
+    color: white;
+}
+
+.future {
+    background-color: var(--blizzard);
+    color: white;
+}
+
+.saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--spacecadet);
+    color: white;
+}
+
+.saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    color: var(--tiffany)
+}
+
+.alert {
+    display: none;
+    padding-bottom: 10px;
+    color: black;
+}
+
+.show {
+    display: block;
+}
