@@ -9,16 +9,8 @@
          var value = $(this).siblings('.description').val();
          var time = $(this).parent().attr('id');
 
-         // Saves description and time in local storage
+         // Saves user's description and time in local storage
          localStorage.setItem(time, value);
-
-         // Displays alert that item was saved
-         $('.alert').addClass('show');
-
-         // Removes alert after 5 seconds
-         setTimeout(function() {
-             $('.alert').removeClass('show');
-         }, 5000);
      });
 
      function hourUpdater() {
@@ -46,12 +38,12 @@
          });
      }
 
-     // set up interval to check if current time needs to be updated
+     // set up interval to check if current time needs to be updated every 10 seconds
      var interval = setInterval(hourUpdater, 1000);
 
      hourUpdater();
 
-     // load any saved data from localStorage
+     // grabs saved data from localStorage
      $('#hour-9 .description').val(localStorage.getItem('hour-9'));
      $('#hour-10 .description').val(localStorage.getItem('hour-10'));
      $('#hour-11 .description').val(localStorage.getItem('hour-11'));

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,17 +6,18 @@
 
 :root {
     --spacecadet: #25283d;
-    --plum: #8f3985;
-    --blizzard: #98dfea;
+    --plum: #662a5f;
+    --blizzard: #b5e5ec;
     --tiffany: #07beb8;
     --champagne: #efd9ce;
 }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     line-height: 1;
     margin-bottom: 20px;
+    background-color: rgb(201, 201, 201);
 }
 
 textarea {
@@ -53,6 +54,7 @@ hr.break {
 
 .description {
     white-space: pre-wrap;
+    color: white;
 }
 
 .time-block {
@@ -75,9 +77,8 @@ hr.break {
 }
 
 .past {
-    background-color: var(--champagne);
+    background-color: var(--spacecadet);
     color: white;
-    opacity: 50%;
 }
 
 .present {
@@ -86,7 +87,7 @@ hr.break {
 }
 
 .future {
-    background-color: var(--blizzard);
+    background-color: var(--tiffany);
     color: white;
 }
 
@@ -102,14 +103,4 @@ hr.break {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
     color: var(--tiffany)
-}
-
-.alert {
-    display: none;
-    padding-bottom: 10px;
-    color: black;
-}
-
-.show {
-    display: block;
 }
